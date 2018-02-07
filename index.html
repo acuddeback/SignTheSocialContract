@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Initialize from HTML</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+	function askName(){
+		var userName = window.prompt("Enter your name to sign the contract");
+		var container = document.getElementById('signature');
+		container.innerHTML += userName; //stop it from printing whole list
+	}
+</script>
+</head>
+<body>
+<p class="mainText">While the social contract is,
+	in fact, merely theoretical and not an actual document
+	authored by Daddy John Locke, you can still sign it!
+	<br></br>Add your name on the dotted line below to
+	show everyone that you are the most superior LDer because
+	you actually signed the social contract *hairflip*</p>
+<input class="button" id="clickMe" type="button" value="Sign Now" onclick="askName();" />
+<br></br><br></br>
+<p id="signature"></p>
+<p>I SIGNED THE SOCIAL CONTRACT DUDES</p>
+</body>
+</html>

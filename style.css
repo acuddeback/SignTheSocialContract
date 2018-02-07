@@ -35,6 +35,10 @@ body {
     cursor: pointer;
   }
 
+.fb-share-button{
+    cursor: pointer;
+}
+
 #signature {
   box-sizing: border-box;
       width: 50%;

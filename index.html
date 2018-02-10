@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="icons8-hand-with-pen-filled-50.png">
 	<script>
+	//function that allows you to sign the social contract
 	function askName(){
 		var userName = window.prompt("Enter your name to sign the contract");
 		var container = document.getElementById('signature');
@@ -14,49 +15,17 @@
 	
 </head>
 <body>
-	
-<div id="fb-root">
-<!--Script for button to share the page on facebook-->
-<script>
-	
-	//You can use Open Graph tags to customize link previews.
-    // Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="https://annacuddeback.github.io/SignTheSocialContract/" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Sign the Social Contract" />
-  <meta property="og:description"   content="Ever been asked if you know what the social contract is in an LD round? Now you can say you've signed it!" />
-  <meta property="og:image"         content="icons8-hand-with-pen-filled-50.png" />
-	
-function fbShare((d, s, id)) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-twttr.widgets.createShareButton(
-  "https:\/\/dev.twitter.com\/web\/tweet-button",
-  document.getElementById("tweet-container"),
-  {
-    size: "large",
-    text: "custom share text",
-    hashtags: "example,demo",
-    via: "twitterdev",
-    related: "twitterapi,twitter"
-  }
-);	
-</script>	
-</div>
 
 
 	<br></br>
-<!-- Introduction to the Social Contract even though the only people using this 
+<!-- Introduction to the Social Contract even though probably the only people using this 
 site are people that have no life becasue they just do debate -->
 <p class="mainText">
 	Disclaimer: This page may only be funny to those that compete in Lincoln Douglas 
 	value debate where barely a round goes by without someone talking about the social 
 	contract as if it were a document that exists in physical space and can be physically signed.
-	If this is funny to you, welcome to the fandom! If not, that's okay, my sister didn't 
+	If you were brought here because of an application to the Berkman Klein Center, welcome!
+	If this is funny to you, join the fandom! If not, that's really okay--my sister didn't 
 	think it was funny either.
 	<br></br>
 	While the social contract is,
@@ -69,31 +38,6 @@ site are people that have no life becasue they just do debate -->
 <br></br><br></br>
 <p id="signature"></p>
 <p>I SIGNED THE SOCIAL CONTRACT DUDES</p>
-
-<!-- Makes a button for people to share on facebook -->
-<div class="fb-share-button" id="fb-share" onclick="fbShare(d, s, fb-share);"><a target="_blank" 
-	href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fannacuddeback.github.io%2FSignTheSocialContract%2F&amp;src=sdkpreparse" 
-	class="fb-xfbml-parse-ignore">Share</a></div>
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="twtr-icon  twtr-color-fill--blue-dark  has-hover"> 
- <path opacity="0" d="M0 0h24v24H0z"></path> 
- <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path> 
-</svg>
-
-<!--
-
-Paramaters from fb-share-button: data-href="https://annacuddeback.github.io/SignTheSocialContract/" 
-     	data-layout="button_count" data-size="large" data-mobile-iframe="true"
-
--->
-
-<!-- Makes a button for people to share on Twitter-->
-
-<!--
-<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Join%20me%20in%20signing%20the%20social%20contract!%20annacuddeback.github.io/SignTheSocialContract/" data-url="https://annacuddeback.github.io/SignTheSocialContract/"
-  data-size="large" data-hashtags="DaddyLocke,Libertarian4Lyfe">
-Tweet</a>
--->
 
 
 </body>

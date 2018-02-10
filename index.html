@@ -8,8 +8,10 @@
 	//function that allows you to sign the social contract
 	function askName(){
 		var userName = window.prompt("Enter your name to sign the contract");
-		var container = document.getElementById('signature');
+		var signature = document.getElementById('signature');
+		var printName = document.getElementByID('printName');
 		container.innerHTML = userName; //signs name on dotted line
+		container.innerHTML = userName; //prints name below line
 	}
 </script>
 	
@@ -45,7 +47,8 @@ send me an email at atc@cuddeback.org with the subject line "fluffy kittens" and
 <input class="button" id="clickMe" type="button" value="Sign Now" onclick="askName();" />
 <br></br><br></br>
 <p id="signature"></p>
-<p>I SIGNED THE SOCIAL CONTRACT DUDES</p>
+<p id="printName"></p>
+<p>signed the social contract</p>
 
 
 </body>
